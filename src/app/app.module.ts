@@ -1,21 +1,18 @@
-import { DataFormComponent } from './data-form/data-form.component';
-
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DataFormModule } from './data-form/data-form.module';
 import { TemplateFormModule } from './template-form/template-form.module';
 
-
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DataFormComponent
+    AppComponent
 
   ],
   imports: [
@@ -25,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     TemplateFormModule,
+    DataFormModule
 
   ],
   providers: [],
